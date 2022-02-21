@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "ts-hello",
+    "slug": "ts-hello",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "ts-hello"
+}
