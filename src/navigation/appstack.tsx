@@ -4,11 +4,11 @@ import { Home, Dashboard } from "../screens";
 
 const { Navigator, Screen } = createStackNavigator();
 
-const AuthStack: FC = () => {
+const AppStack: FC = () => {
     return (
-        <Navigator>
-            <Screen name="home" componen={Home} />
-            <Screen name="dashboard" componen={Dashboard} />
+        <Navigator screenOptions={{ headerShown: false }}>
+            <Screen name="home" component={Home} />
+            <Screen name="dashboard" component={Dashboard} />
         </Navigator>
     );
 };

@@ -1,14 +1,14 @@
 import React, { FC } from "react";
-import { createStackNavigator } from "react-navigation-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import { SignUp, Login } from "../screens";
 
 const { Navigator, Screen } = createStackNavigator();
 
 const AuthStack: FC = () => {
     return (
-        <Navigator>
-            <Screen name="signup" componen={SignUp} />
-            <Screen name="login" componen={Login} />
+        <Navigator screenOptions={{headerShown: false}}>
+            <Screen name="signup" component={SignUp} />
+            <Screen name="login" component={Login} />
         </Navigator>
     );
 };
